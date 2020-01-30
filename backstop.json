@@ -16,15 +16,18 @@
   "onReadyScript": "puppet/onReady.js",
   "scenarios": [
     {
-      "label": "BackstopJS Homepage",
-      "url": "https://garris.github.io/BackstopJS/",
+      "label": "BackstopJS Test Code",
+      "url": "/index.html",
       "delay": 500,
       "hideSelectors": [],
       "removeSelectors": [],
       "selectors": [
-        "document",
         "nav",
-        ".jumbotron"
+        ".jumbotron",
+        "body .col-md-4:nth-of-type(1)",
+        "body .col-md-4:nth-of-type(2)",
+        "body .col-md-4:nth-of-type(3)",
+        "footer"
       ],
       "misMatchThreshold" : 0.1,
       "requireSameDimensions": true
